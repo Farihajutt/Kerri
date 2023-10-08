@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/59cac9cfb5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .section {
+            height: 100vh;
+            width: 100%;
+        }
+                                                        
+        .slider {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: url(./images/header-bg2.jpg);
+            background-position: center;
+            background-size: cover;
+            animation: slidy 30s linear infinite;
+
+        }
+
+        .slider1 {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: url(./images/header-bg3.jpg);
+            background-position: center;
+            background-size: cover;
+            animation: slidy1 30s linear infinite;
+        }
+
+        .slider2 {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: url(./images/header-bg.jpg);
+            background-position: center;
+            background-size: cover;
+            animation: slidy2 30s linear infinite;
+
+        }
+
+
+        @keyframes slidy {
+            0% {
+                opacity: 1;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slidy1 {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 1;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes slidy2 {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            66% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .o {
+            background-color: rgba(0, 0, 0, 0.616);
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+
+        .navbar {
+            height: 70px;
+            width: 100%;
+        }
+
+        .logo {
+            height: 35px;
+            width: 100px;
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+
+
+        .navlist {
+            height: max-content;
+            width: max-content;
+            margin-left: 600px;
+            margin-top: -40px;
+            cursor: pointer;
+        }
+
+        .one:hover {
+            color: rgba(243, 42, 42, 0.523);
+        }
+
+        .one {
+            display: inline;
+            color: white;
+            margin: 15px;
+            font-size: 110%;
+            font-weight: 1;
+        }
+
+        .icon {
+            height: 40px;
+            width: 40px;
+            background-color: gray;
+            border-radius: 5px;
+            position: fixed;
+
+
+        }
+
+        .setting {
+            color: white;
+            animation: gear 2s linear infinite;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+            position: fixed;
+
+        }
+
+        @keyframes gear {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .two {
+            height: 400px;
+            width: 800px;
+            margin-left: 200px;
+        }
+
+        .three {
+            color: white;
+            font-weight: 1;
+            margin-left: 360px;
+        }
+
+        .four {
+            color: white;
+            margin-top: 25px;
+            margin-left: 270px;
+            font-size: 50px;
+            position: absolute;
+            animation: slide 10s linear infinite;
+
+        }
+
+        .five {
+            color: white;
+            margin-top: 25px;
+            margin-left: 130px;
+            font-size: 50px;
+            position: absolute;
+            animation: slide1 10s linear infinite;
+        }
+
+
+
+        .six {
+            color: white;
+            margin-top: 25px;
+            margin-left: 200px;
+            font-size: 50px;
+            position: absolute;
+            animation: slide2 10s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 1;
+            }
+
+            14.3% {
+                opacity: 0;
+            }
+
+            28.6% {
+                opacity: 0;
+            }
+
+            42.9% {
+                opacity: 0;
+            }
+
+            57.2% {
+                opacity: 0;
+
+            }
+
+            71.5% {
+                opacity: 0;
+
+            }
+
+            85.8% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide1 {
+            0% {
+                opacity: 0;
+            }
+
+            14.3% {
+                opacity: 0;
+            }
+
+            28.6% {
+                opacity: 0;
+            }
+
+            42.9% {
+                opacity: 1;
+            }
+
+            57.2% {
+                opacity: 0;
+
+            }
+
+            71.5% {
+                opacity: 0;
+
+            }
+
+            85.8% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes slide2 {
+            0% {
+                opacity: 0;
+            }
+
+            14.3% {
+                opacity: 0;
+            }
+
+            28.6% {
+                opacity: 0;
+            }
+
+            42.9% {
+                opacity: 0;
+            }
+
+            57.2% {
+                opacity: 0;
+
+            }
+
+            71.5% {
+                opacity: 1;
+
+            }
+
+            85.8% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+        }
+
+        .seven {
+            margin-top: 100px;
+            color: white;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .btn {
+            height: 60px;
+            width: 180px;
+            border-radius: 50px;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            font-size: 120%;
+            margin-top: 30px;
+            margin-left: 330px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .button {
+            height: 55px;
+            width: 35px;
+            border-radius: 40px;
+            border: 3px solid white;
+            margin-left: 410px;
+            margin-top: 70px;
+            animation: updown 5s ease-in infinite;
+        }
+
+        .line {
+            height: 12px;
+            border: 2px solid white;
+            width: 1px;
+            margin-left: 12px;
+            margin-top: 20px;
+            border-radius: 2px;
+        }
+
+         @keyframes updown {
+            0% {
+                margin-top: 70px
+            }
+
+            20% {
+                margin-top: 0px;
+
+            }
+
+            40% {
+                margin-top: 70px;
+            }
+
+            60% {
+                margin-top: 20px;
+            }
+
+            80% {
+                margin-top: 70px;
+            }
+
+            100% {
+                margin-top: 40px;
+            }
+
+
+        }  
+
+        .section1 {
+            height: 120vh;
+            width: 100%;
+        }
+
+        .picture {
+            height: 460px;
+            width: 40%;
+            border: 5px solid whitesmoke;
+            border-radius: 2px;
+            margin-top: 130px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/about.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .text {
+            height: 460px;
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 130px;
+            margin-left: 15px;
+        }
+
+        .black {
+            margin-top: 5px;
+        }
+
+        .black1 {
+            margin-left: 105px;
+            margin-top: -35px;
+            font-weight: 1;
+
+        }
+
+        .blak {
+            margin-top: 15px;
+            font-weight: 1;
+        }
+
+        .red {
+            margin-left: 65px;
+            margin-top: -29px;
+            color: rgb(230, 95, 120);
+
+        }
+
+        .para1 {
+            margin-top: 25px;
+            color: rgb(108, 117, 125);
+        }
+
+        .para2 {
+            margin-top: 30px;
+            color: rgb(108, 117, 125);
+        }
+
+        .para3 {
+            margin-top: 30px;
+            color: rgb(108, 117, 125);
+        }
+
+        .layout1 {
+            margin-top: 40px;
+            height: 40px;
+            width: 40px;
+            border: 1px solid gray;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .layout2 {
+            margin-top: 40px;
+            height: 40px;
+            width: 40px;
+            border: 1px solid gray;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 5px;
+        }
+
+        .layout3 {
+            margin-top: 40px;
+            height: 40px;
+            width: 40px;
+            border: 1px solid gray;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 5px;
+        }
+
+        .layout4 {
+            margin-top: 40px;
+            height: 40px;
+            width: 40px;
+            border: 1px solid gray;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 5px;
+        }
+
+        .section2 {
+            height: 150vh;
+            width: 100%;
+            padding: 1px;
+            background-color: rgb(248, 249, 250);
+        }
+
+        .five1 {
+            margin-left: 545px;
+            margin-top: 70px;
+            font-weight: 1;
+            font-size: 240%;
+        }
+
+        .five12 {
+            font-size: 240%;
+            margin-left: 620px;
+            margin-top: -43px;
+        }
+
+        .five13 {
+            text-align: center;
+            margin-top: 20px;
+            line-height: 25px;
+            color: rgb(108, 117, 125);
+        }
+
+        .five14 {
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+        }
+
+        .five15 {
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .five16 {
+            height: 250px;
+            border-radius: 5px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .five17 {
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 20px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+        }
+
+        .five18 {
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 20px;
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+        }
+
+        .five19 {
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 20px;
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+        }
+
+        .graph {
+            height: 90px;
+            width: 90px;
+            margin-left: 130px;
+            margin-top: 20px;
+        }
+
+        .five20 {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: 1;
+        }
+
+        .five21 {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: 1;
+        }
+
+        .five22 {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: 1;
+        }
+
+        .five23 {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: 1;
+        }
+
+        .five24 {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: 1;
+        }
+
+        .five25 {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: 1;
+        }
+
+        .five26 {
+            width: 60px;
+            border: 1px solid rgb(230, 95, 120);
+            border-radius: 2px;
+            margin-top: 10px;
+            margin-left: 140px;
+
+        }
+
+        .five27 {
+            margin-top: 10px;
+            text-align: center;
+            line-height: 25px;
+            color: rgb(108, 117, 125);
+        }
+
+        .section3 {
+            height: 40vh;
+            width: 100%;
+
+        }
+
+        .five28 {
+            text-align: center;
+            margin-top: 90px;
+        }
+
+        .btn1 {
+            height: 55px;
+            width: 130px;
+            background-color: rgb(230, 95, 120);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            margin-top: 30px;
+            margin-left: 550px;
+            cursor: pointer;
+
+
+        }
+
+        .section4 {
+            height: 110vh;
+            width: 100%;
+            background-color: rgb(248, 249, 250);
+            padding: 1px;
+
+        }
+
+        .five29 {
+            height: 70px;
+            width: 400px;
+            margin-top: 50px;
+            margin-left: 550px;
+
+        }
+
+        .five30 {
+            font-size: 40px;
+            margin-left: 10px;
+            margin-top: 40px;
+        }
+
+        .five31 {
+            font-size: 70px;
+        }
+
+        .five32 {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .five33 {
+            font-weight: 1;
+            margin-top: 5px;
+
+        }
+
+        .five34 {
+            height: 60px;
+            width: 200px;
+            margin-left: 60px;
+            margin-top: -35px;
+        }
+
+        .five35 {
+            text-align: center;
+            line-height: 25px;
+            color: rgb(108, 117, 125);
+        }
+
+        .main {
+            height: 60vh;
+            width: 1000px;
+            margin-left: 135px;
+            margin-top: 40px;
+            overflow: hidden;
+
+        }
+
+        .sLIDER {
+            height: 100%;
+            width: 3050px;
+            animation: slidesss 9s infinite linear;
+         
+
+        }
+
+        @keyframes slidesss {
+            0% {
+                margin-left: 0;
+            }
+
+            32% {
+                margin-left: 0;
+            }
+
+            33% {
+                margin-left: -1000px;
+            }
+
+            65% {
+                margin-left: -1000px;
+            }
+
+            66% {
+                margin-left: -2000px;
+            }
+
+            100% {
+                margin-left: -2000px;
+            }
+        }
+
+        .slidess {
+            display: inline-block;
+            vertical-align: top;
+            height: 100%;
+            width: 1000px;
+            
+        }
+
+        .slidess1 {
+            display: inline-block;
+            vertical-align: top;
+            height: 100%;
+            width: 1000px;
+            margin-left: -5px;
+            transition: all ease-in-out 2s;
+        }
+
+        .slidess2 {
+            display: inline-block;
+            vertical-align: top;
+            height: 100%;
+            width: 1000px;
+            margin-left: -5px;
+            transition: all ease-in-out 2s;
+        }
+
+        .droplet {
+            height: 30px;
+            width: 30px;
+            margin-top: 20px;
+            margin-left: 450px;
+            font-size: 30px;
+        }
+
+        .drop {
+            height: 30px;
+            width: 30px;
+            margin-left: 485px;
+            margin-top: -30px;
+            font-size: 30px;
+        }
+
+        .ten {
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            border: 5px solid whitesmoke;
+            margin-left: 430px;
+            margin-top: 25px;
+            background-image: url(./images/testi-1.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .ten1 {
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(108, 117, 125);
+            line-height: 25px;
+
+        }
+
+        .ten2 {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(0, 0, 0, 0.836);
+
+        }
+
+        .eleven {
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            border: 5px solid whitesmoke;
+            margin-left: 430px;
+            margin-top: 25px;
+            background-image: url(./images/testi-2.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .twelve {
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            border: 5px solid whitesmoke;
+            margin-left: 430px;
+            margin-top: 25px;
+            background-image: url(./images/testi-3.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .section5{
+            height: 180vh;
+            width: 100%;
+            padding: 1px;
+        }
+        .ten3{
+            text-align: center;
+            margin-top: 120px;
+            font-size: 200%;
+
+        }
+        .ten4{
+            margin-top: 25px;
+            text-align: center;
+            color: rgb(108, 117, 125);
+            line-height: 25px;
+        }
+        .ten5{
+            height: max-content;
+            width:max-content;
+            margin-left: 350px;
+            margin-top: 70px;
+        }
+        .ten6{
+            display: inline;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .ten6:hover{
+            color: white;
+            background-color: rgb(230, 95, 120);
+        }
+        .ten7{
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .ten8{
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ten9{
+            height: 250px;
+            border-radius: 5px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ten10{
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 20px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ten11{
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 20px;
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ten12{
+            height: 250px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 20px;
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .section6{
+            height: 150vh;
+            width: 100%;
+            background-color: rgb(248, 249, 250);
+            padding: 1px;
+
+
+
+        }
+        .ten13{
+            text-align: center;
+            margin-top: 70px;
+            font-size: 220%;
+        }
+        .ten14{
+            height: 470px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 90px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+
+        }
+        .ten15{
+            height: 470px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .ten16{
+            height: 470px;
+            border-radius: 5px;
+            width: 350px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 50px;
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .ten17{
+            height: 250px;
+            width: 340px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 10px;
+            margin-left: 5px;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 5px;
+            background-image: url(./images/blog-1.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .ten18{
+            height: 250px;
+            width: 340px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top:10px;
+            margin-left: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/blog-2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .ten19{
+            height: 250px;
+            border-radius: 5px;
+            width: 340px;
+            border: 1px solid rgba(128, 128, 128, 0.148);
+            margin-top: 10px;
+            margin-left: 5px;
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/blog-3.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .ten20{
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 150%;
+            cursor: pointer;
+        }
+        .ten21{
+            margin-top: 10px;
+            margin-left: 20px;
+            color: rgb(108, 117, 125);
+
+
+        }
+        .ten22{
+            color: rgb(245, 95, 123);
+            
+        }
+        .ten23{
+            height: max-content;
+            width: max-content;
+            margin-top: 10px;
+        }
+        .ten24{
+            margin-top: 20px;
+            margin-left: 20px;
+            color: rgb(108,117,125);
+            cursor: pointer;
+        }
+        .section7{
+            height: 150vh;
+            width: 100%;
+            padding: 1px;
+            
+        }
+        .ten25{
+            height: 200px;
+            width: 200px;
+            margin-top: 100px;
+            margin-left: 150px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .ten26{
+            height: 200px;
+            width: 200px;
+            margin-top: 100px;
+            margin-left: 150px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .ten27{
+            height: 200px;
+            width: 230px;
+            margin-top: 100px;
+            margin-left: 150px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .ten28{
+            height: 40px;
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+        .ten29{
+            text-align: center;
+            margin-top: 60px;
+            font-size: 130%;
+        }
+        .ten30{
+            text-align: center;
+            margin-top: 10px;
+            color: rgb(108, 117, 125);
+        }
+        .ten31{
+            height: 40px;
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 70px;
+
+        }
+        .ten32{
+            height: 40px;
+            width: 40px;
+            margin-top: 20px;
+            margin-left: 70px;
+
+        }
+        #ten33{
+            margin-left: 70px;
+            margin-top: 5px;
+        }
+        .ten34{
+            height: 50px;
+            width: 180px;
+            border-radius: 2px;
+            margin-left: 80%;
+            margin-top: 20px;
+            color: white;
+            cursor: pointer;
+            background-color: rgb(245, 95, 123);
+            border: none;
+            font-size: 100%;
+        }
+        .section8{
+            height: 50vh;
+            width: 100%;
+            background-color: rgb(33,33,33);
+            padding: 1px;
+        }
+        .ten36{
+            height: 60px;
+            width: 400px;
+            margin-top: 100px;
+            margin-left: 530px;
+            cursor: pointer;
+        }
+        .ten37:hover{
+            color: rgb(245, 95, 123);
+        }
+        .ten35{
+            height: 50px ;
+            width: 50px;
+            border-radius: 100%;
+            background-color: rgb(49,49,49);
+            display: inline-block;
+            vertical-align: top;
+            margin: 5px;
+        }
+        .ten37{
+            font-size: 20px;
+            margin-left: 15px;
+            margin-top: 15px;
+            color: rgb(108, 117, 125);
+        }
+        .ten38{
+            margin-top: 10px;
+            margin-left: -30px;
+            color: rgb(108, 117, 125);
+
+        }
+        .ten40{
+            font-size: 50px;
+        }
+        .ten41{
+            font-size: 50px;
+            /* margin-top: -20px; */
+            margin-left: 20px;
+        }
+        .ten42{
+            font-size: 45px;
+            margin-left: 10px;
+            /* margin-top: -10px; */
+        }
+        .Img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: .34s;
+        }
+        .overlay1{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.765);
+            top: 100%;
+            transition: .1s;
+            position: absolute;
+        }
+        .ten7:hover .Img{
+            transform: scale(1.1);
+        }
+        .ten7:hover .overlay1{
+            top: 0;
+        }
+        .nine1{
+            text-align: center;
+            margin-top: 90px;
+            color: rgb(108, 117, 125);
+            
+        }
+        .nine2{
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+            font-size: 120%;
+        }
+        .ten8:hover .Img{
+            transform: scale(1.1);
+        }
+        .ten8:hover .overlay1{
+            top: 0;
+        }
+        .ten9:hover .Img{
+            transform: scale(1.1);
+        }
+        .ten9:hover .overlay1{
+            top: 0;
+        }
+        .ten10:hover .Img{
+            transform: scale(1.1);
+        }
+        .ten10:hover .overlay1{
+            top: 0;
+        }
+        .ten11:hover .Img{
+            transform: scale(1.1);
+        }
+        .ten11:hover .overlay1{
+            top: 0;
+        }
+        .ten12:hover .Img{
+            transform: scale(1.1);
+        }
+        .ten12:hover .overlay1{
+            top: 0;
+        }
+        
+
+        
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="slider"></div>
+        <div class="slider1"></div>
+        <div class="slider2"></div>
+        <div class="o">
+            <div class="navbar">
+                <div class="logo">
+                    <img class="fade" src="./images/logo.png" alt="">
+
+                </div>
+                <div class="navlist">
+                    <ul>
+                        <li class="one">Home</li>
+                        <li class="one">About</li>
+                        <li class="one">Services</li>
+                        <li class="one">Client</li>
+                        <li class="one">Portfolio</li>
+                        <li class="one">Blog</li>
+                        <li class="one">Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-gear setting"></i>
+            </div>
+            <div class="two">
+                <h2 class="three">Welcome</h2>
+                <h1 class="four">I'M Kerri Deo.</h1>
+                <h1 class="five">I'M A Graphic Designer</h1>
+                <h1 class="six">I'M A Photographer.</h1>
+                <p class="seven">It is a long established fact that a reader will be of a page when <br> established
+                    fact looking at its layout.</p>
+                <button class="btn">Download CV</button>
+                <div class="button">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="picture"></div>
+        <div class="text">
+            <h1 class="black">About</h1>
+            <h1 class="black1">Me</h1>
+            <h2 class="blak">Hello!</h2>
+            <h2 class="red">I'M Kerri Deo.</h2>
+            <p class="para1">It is a long established fact that a reader will be distracted by the readable <br> content
+                of a page when looking at its layout</p>
+            <p class="para2">The point of using Lorem Ipsum is that it has a more-or-less normal <br> distribution of
+                letters, as opposed to using 'Content here, content here',<br> making it look like readable English.</p>
+            <p class="para3">There are many variations of passages of Lorem Ipsum available, but the <br> majority have
+                suffered alteration in some form, by injected humour, or <br> randomised words which don't look even
+                slightly believable.</p>
+            <div class="layout1">
+                <i class="fa-solid fa-futbol five32"></i>
+            </div>
+            <div class="layout2">
+                <i class="fa-brands fa-facebook-f five32"></i>
+            </div>
+            <div class="layout3">
+                <i class="fa-brands fa-linkedin-in five32"></i>
+            </div>
+            <div class="layout4">
+                <i class="fa-brands fa-twitter five32"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="section2">
+        <h1 class="five1">Our</h1>
+        <h1 class="five12">Services</h1>
+        <p class="five13">It is a long established fact that a reader will be of a page when <br> established fact
+            looking at its layout.</p>
+        <div class="five14">
+            <div class="graph">
+                <i class="fa-solid fa-chart-line five30" style="color: #d80e36;"></i>
+            </div>
+            <h2 class="five20">Graphic Design</h2>
+            <hr class="five26">
+            <p class="five27">There are many variations of passages of <br> but the majority have suffered alteration in
+                <br> some form.
+            </p>
+        </div>
+        <div class="five15">
+            <div class="graph">
+                <i class="fa-solid fa-mug-hot five30" style="color: #ec092b;"></i>
+            </div>
+            <h2 class="five21">Unlimited Color</h2>
+            <hr class="five26">
+            <p class="five27">There are many variations of passages of <br> but the majority have suffered alteration in
+                <br> some form.
+            </p>
+        </div>
+        <div class="five16">
+            <div class="graph">
+                <i class="fa-solid fa-cloud-arrow-up five30" style="color: #f50025;"></i>
+            </div>
+            <h2 class="five22">Media Marketing</h2>
+            <hr class="five26">
+            <p class="five27">There are many variations of passages of <br> but the majority have suffered alteration in
+                <br> some form.
+            </p>
+        </div>
+        <div class="five17">
+            <div class="graph">
+                <i class="fa-solid fa-file five30" style="color: #ec1818;"></i>
+            </div>
+            <h2 class="five23">Unlimited Wifi</h2>
+            <hr class="five26">
+            <p class="five27">There are many variations of passages of <br> but the majority have suffered alteration in
+                <br> some form.
+            </p>
+        </div>
+        <div class="five18">
+            <div class="graph">
+                <i class="fa-solid fa-chess-board five30" style="color: #d91720;"></i>
+            </div>
+            <h2 class="five24">Responsive Design</h2>
+            <hr class="five26">
+            <p class="five27">There are many variations of passages of <br> but the majority have suffered alteration in
+                <br> some form.
+            </p>
+        </div>
+        <div class="five19">
+            <div class="graph">
+                <i class="fa-solid fa-sheet-plastic five30" style="color: #e60f19;"></i>
+            </div>
+            <h2 class="five25">Easy to customize</h2>
+            <hr class="five26">
+            <p class="five27">There are many variations of passages of <br> but the majority have suffered alteration in
+                <br> some form.
+            </p>
+        </div>
+    </div>
+    <div class="section3">
+        <h1 class="five28">I Am Available For Freelancer.</h1>
+        <button class="btn1">HIRE ME!</button>
+    </div>
+    <div class="section4">
+        <div class="five29">
+            <h1 class="five33">Our</h1>
+            <div class="five34">
+                <h1>Client</h1>
+            </div>
+        </div>
+        <p class="five35">It is a long established fact that a reader will be of a page when <br> established fact
+            looking at its layout.</p>
+        <div class="main">
+            <div class="sLIDER">
+                <div class="slidess">
+                    <div class="droplet">
+                        <i class="fa-solid fa-droplet" style="color: #ec5158;"></i>
+                    </div>
+                    <div class="drop">
+                        <i class="fa-solid fa-droplet" style="color: #ec5158;"></i>
+                    </div>
+                    <div class="ten"></div>
+                    <p class="ten1">"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters,<br>as oppose to using 'Content here."</p>
+                    <p class="ten2">-Ebony verty,<b>Envanto</b></p>
+                </div>
+                <div class="slidess1">
+                    <div class="droplet">
+                        <i class="fa-solid fa-droplet" style="color: #ec5158;"></i>
+                    </div>
+                    <div class="drop">
+                        <i class="fa-solid fa-droplet" style="color: #ec5158;"></i>
+                    </div>
+                    <div class="eleven"></div>
+                    <p class="ten1">"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters,<br>as oppose to using 'Content here."</p>
+                    <p class="ten2">-Ebony verty,<b>Envanto</b></p>
+                </div>
+                <div class="slidess2">
+                    <div class="droplet">
+                        <i class="fa-solid fa-droplet" style="color: #ec5158;"></i>
+                    </div>
+                    <div class="drop">
+                        <i class="fa-solid fa-droplet" style="color: #ec5158;"></i>
+                    </div>
+                    <div class="twelve"></div>
+                    <p class="ten1">"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters,<br>as oppose to using 'Content here."</p>
+                    <p class="ten2">-Ebony verty,<b>Envanto</b></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="section5">
+        <p class="ten3">Our <b>Works</b></p>
+        <p class="ten4">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
+        <div class="ten5">
+            <ul>
+                <li class="ten6">ALL</li>
+                <li class="ten6">SEO</li>
+                <li class="ten6">WEBDESIGN</li>
+                <li class="ten6">WORK</li>
+                <li class="ten6">WORDPRESS</li>
+            </ul>
+        </div>
+        <div class="ten7">
+            <img class="Img" src="./images/1.jpg" alt="">
+            <div class="overlay1">
+                <p class="nine1">Category</p>
+                <p class="nine2">Project Title</p>
+            </div>
+        </div>
+        <div class="ten8">
+            <img class="Img" src="./images/2.jpg" alt="">
+            <div class="overlay1">
+                <p class="nine1">Category</p>
+                <p class="nine2">Project Title</p>
+            </div>
+        </div>
+        <div class="ten9">
+            <img class="Img" src="./images/3.jpg" alt="">
+            <div class="overlay1">
+                <p class="nine1">Category</p>
+                <p class="nine2">Project Title</p>
+            </div>
+        </div>
+        <div class="ten10">
+            <img class="Img" src="./images/4.jpg" alt="">
+            <div class="overlay1">
+                <p class="nine1">Category</p>
+                <p class="nine2">Project Title</p>
+            </div>
+        </div>
+        <div class="ten11">
+            <img class="Img" src="./images/5.jpg" alt="">
+            <div class="overlay1">
+                <p class="nine1">Category</p>
+                <p class="nine2">Project Title</p>
+            </div>
+        </div>
+        <div class="ten12">
+            <img class="Img" src="./images/6.jpg" alt="">
+            <div class="overlay1">
+                <p class="nine1">Category</p>
+                <p class="nine2">Project Title</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="section6">
+        <p class="ten13">Our <b>Blog</b></p>
+        <p class="ten4">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
+        <div class="ten14">
+            <div class="ten17"></div>
+            <p class="ten20">There are many variations</p>
+            <div class="ten23">
+                <span class="ten21">11 March 2018</span>
+                <span class="ten22">By Kerri</span>
+            </div>
+            <p class="ten21">Sit sagittis vulputate laoreet sodales tortor <br> b nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <p class="ten24">Read More...</p>
+          
+            
+        </div>
+        <div class="ten15">
+            <div class="ten18"></div>
+            <p class="ten20">Contrary to popular belief</p>
+            <div class="ten23">
+                <span class="ten21">18 March 2018</span>
+                <span class="ten22">By Kerri</span>
+            </div>
+            <p class="ten21">Sit sagittis vulputate laoreet sodales tortor <br> b nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <p class="ten24">Read More...</p>
+        </div>
+        <div class="ten16">
+            <div class="ten19"></div>
+            <p class="ten20">Lorem Ipsum is not simply</p>
+            <div class="ten23">
+                <span class="ten21">22 March 2018</span>
+                <span class="ten22">By Kerri</span>
+            </div>
+            <p class="ten21">Sit sagittis vulputate laoreet sodales tortor <br> b nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <p class="ten24">Read More...</p>
+        </div>
+    </div>
+    <div class="section7">
+    <p class="ten13"><b>Contact </b>Us</p>
+    <p class="ten4">It is a long established fact that a reader will be of a page when <br> established fact looking at its layout.</p>
+    <div class="ten25">
+        <div class="ten28">
+            <i class="fa-solid fa-mobile-screen ten40" style="color: #e60a15;"></i>
+        </div>
+        <p class="ten29">Call us on</p>
+            <p class="ten30">+985 123 7856</p>
+    </div>
+    <div class="ten26">
+        <div class="ten28">
+            <i class="fa-sharp fa-regular fa-envelope ten41" style="color: #e7133d;"></i>
+        </div>
+        <p class="ten29">Email Us At</p>
+        <p class="ten30">Website.Kerri@gmail.com</p>
+    </div>
+    <div class="ten27">
+        <div class="ten28">
+            <i class="fa-solid fa-location-dot ten42" style="color: #e2182c;"></i>
+        </div>
+        <p class="ten29">Visit Office</p>
+        <p class="ten30">202, Grasselli Street , Conway.</p>
+    </div>
+    <textarea style="padding-left:5px; padding-top: 5px;" name="input" id="ten33" cols="80" rows="2"placeholder="Your name"></textarea>
+    <textarea style="padding-left: 5px; padding-top: 5px;" name="input" id="" cols="80" rows="2" placeholder="Your e-mail"></textarea>
+    <textarea style="padding-left: 5px; padding-top: 5px;" name="input" id="ten33" cols="165" rows="2" placeholder="Your Subject"></textarea>
+    <textarea style="padding-top: 5px; padding-left: 5px; " name="input" id="ten33" cols="165" rows="6" placeholder="Your message"></textarea>
+    <button class="ten34">SEND MESSAGE</button>
+    </div>
+    <div class="section8">
+        <div class="ten36">
+        <div class="ten35">
+            <i class="fa-brands fa-facebook ten37"></i>
+        </div>
+        <div class="ten35">
+            <i class="fa-brands fa-linkedin-in ten37"></i>
+        </div>
+        <div class="ten35">
+            <i class="fa-brands fa-pinterest ten37"></i>
+        </div>
+        <div class="ten35">
+            <i class="fa-brands fa-twitter ten37"></i>
+        </div>
+        <p class="ten38">2018 - 2021 © Kerri. Design by SRBThemes.</p>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

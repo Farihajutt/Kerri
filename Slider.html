@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Slider</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .Main{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+        }
+        .Box{
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .B1{
+            background-image: url(./images/header-bg.jpg);
+            animation: slidy 9s linear infinite;
+        }
+        .B2{
+            background-image: url(./images/header-bg2.jpg);
+            animation: slidy1 9s linear infinite;
+        }
+        .B3{
+            background-image: url(./images/header-bg3.jpg);
+            animation: slidy2 9s linear infinite;
+        }
+
+        @keyframes slidy{
+            0%{
+                opacity: 1;
+            }
+            33%{
+                opacity: 0;
+            }
+            66%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        @keyframes slidy1{
+            0%{
+                opacity: 0;
+            }
+            33%{
+                opacity: 1;
+            }
+            66%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+        @keyframes slidy2{
+            0%{
+                opacity: 0;
+            }
+            33%{
+                opacity: 0;
+            }
+            66%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.486);
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="Main">
+        <div class="Box B1"></div>
+        <div class="Box B2"></div>
+        <div class="Box B3"></div>
+        <div class="Box overlay">
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

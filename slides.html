@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Main{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            position: relative;
+            overflow: hidden;
+        }
+        .Img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: .34s;
+        }
+        .Main:hover .Img{
+            transform: scale(1.1);
+        }
+        .Overlay{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.479);
+            position: absolute;
+            transition: .1s;
+            top: 100%;
+        }
+        .Main:hover .Overlay{
+            top: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="Main">
+    <img class="Img" src="./images/2.jpg" alt="">
+    <div class="Overlay">
+        Hello overlay
+    </div>
+</div>
+
+    
+</body>
+</html>

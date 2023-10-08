@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+
+    <style>
+        .Main{
+            height: 400px;
+            width: 800px;
+            border: 1px solid;
+            position: relative;
+        }
+        .Box{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+        .B{
+            
+            background-color: green;
+        }
+        .B1{
+            background-color: red;
+            z-index: 1;
+        }
+        .B2{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="Main">
+        <div class="Box B"></div>
+        <div class="Box B1"></div>
+        <div class="Box B2"></div>
+    </div>
+
+
+</body>
+</html>
